@@ -35,7 +35,8 @@ BEGIN
 		DECLARE @type_id smallint
 
 		IF(@type = 'work')
-			INSERT INTO [dbo].[phone](@id, @number )
+			INSERT INTO phone VALUES (@id, @number )
+	
 
 	END
 	ELSE
